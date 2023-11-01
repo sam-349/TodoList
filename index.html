@@ -9,18 +9,16 @@
 <body>
     <div class="container">
         <div class="app">
-            <div class="title">
                 <h1>To-Do List <img src="image/todo-icon.png" alt=""></h1>
-            </div>
             <div class="task">
-                <input type="text" class="todo" id="todo" placeholder="Enter a todo">
-                <button class="add" onclick="addTodo()">Add</button>
+                <input type="text" id="todo" placeholder="Enter a todo">
+                <button id="add" onclick="addTodo()">Add</button>
             </div>
-            <!-- <ul class="task-list">
-                <li class="checked">todo 1</li>
+            <ul id="task-list">
+                <!-- <li class="checked">todo 1</li>
                 <li>todo 2</li>
-                <li>todo 3</li>
-            </ul> -->
+                <li>todo 3</li> -->
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>

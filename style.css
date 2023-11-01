@@ -14,19 +14,21 @@
     background-color: #08AEEA;
     background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 }
-.title{
+/* .title{
     display: flex;
     align-items: center;
     margin-bottom:20px ;
     margin-left: 20%;
-}
+} */
 
-.title h1{
+h1{
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.title h1 img{
+h1 img{
     width: 40px;
     height: 40px;
 }
@@ -34,7 +36,7 @@
 .app{
     padding: 25px;
     width: auto;
-    background: #980db0;
+    background: #fff;
     border-radius: 25px;
 }
 
@@ -42,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    background: #edeef0;
+    /* background: #edeef0; */
     margin-bottom: 20px;
     border-radius: 40px;
 }
@@ -55,7 +57,8 @@
     border: none;
     outline: none;
     background: transparent;
-    font-weight: 200;;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .task button{
@@ -66,7 +69,7 @@
     font-size: 14px;
     color: #fff;
     border-radius: 40px;
-    background: rgb(238, 64, 25);
+    background: rgb(23, 194, 17);
     cursor: pointer;
 
 }
@@ -76,9 +79,10 @@ ul li{
     font-size: 16px;
     padding: 12px 8px 12px 25px;
     user-select: none;
-    color: #eee;
+    /* color: #eee; */
     cursor: pointer;
     position: relative;
+    font-weight: 600;
 }
 
 ul li::before{
@@ -88,7 +92,7 @@ ul li::before{
     position: absolute;
     border-radius: 50%;
     background-image: url(image/unchecked.png);
-    background-size: contain;;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     top: 33%;
@@ -97,9 +101,26 @@ ul li::before{
 
 ul li.checked{
     color: #a2a2a2;
-    text-decoration: dashed;
+    text-decoration:line-through;
 }
 
 ul li.checked::before{
     background-image: url(image/check-mark.png);   
+}
+
+ul li span{
+    border: 0;
+    outline: 0;
+    border-radius: 45px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top:5px;
+    /* background: #eee; */
+}
+
+ul li span:hover{
+    background: #000000;
+    color: #eee;
+    cursor: pointer;
 }
